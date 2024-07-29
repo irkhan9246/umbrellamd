@@ -3,77 +3,181 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doctor Dashboard</title>
+    <title>Umbrellamd Registration Form</title>
+    <style>
+      .links {
+        margin: 3px;
+      }
+      .form{
+        border: 1px solid;
+        width: 50%;
+      }
+      .submit{
+        background-color: blue;
+        color: white;
+      }
+    
+    </style>
   </head>
+
   <body>
-    <h1>Doctor Dashboard</h1>
-    <ol>
-      <li>Dashboard</li>
-      <li>Appointments</li>
-      <li>Schedule</li>
-      <li>Labs</li>
-      <li>Waiting Room</li>
-      <li>Refill Request</li>
-      <li>My Profile</li>
-      <li>All Patients</li>
-      <li>Sessions</li>
-      <li>Orders</li>
-      <li>Wallet</li>
-      <li>Account settings</li>
-      <h2>1. Dashboard</h2>
-      <p>
-        The doctor can log in and out of the system using the button on the top
-        right corner. Doctor also see
-      </p>
-      <ul>
-        <li>All Patients</li>
-        <li>Upcoming Appointments</li>
-        <li>Total Sessions</li>
-        <li>Total Earnings on dashboard</li>
-        <p>There are several options that the doctor uses on the left.</p>
-      </ul>
-      <h2>2. Appointments</h2>
-      <p>
-        During appointments, the doctor has access to the patient's name,
-        symptoms, appointment ID, date, time, status, and action in addition to
-        seeing every appointment.
-      </p>
-      <h2>3. Schedule</h2>
-      <p>
-        A doctor can set the day and hour of their appointments using the
-        schedule feature.
-      </p>
-      <h2>4. Labs</h2>
-      <p>In labs there are many option like</p>
-      <ul>
-        <li>
-          <b>Order Labs: </b>In order labs doctor can buy online lab test.
-        </li>
-        <li>
-          <b>Patient Reports: </b>In Patient reports doctor can see patient lab
-          test reports.
-        </li>
-        <li>
-          <b>Pending Online Lab: </b>Within the pending online lab, the
-          physician can view any lab test that has not been approved by them.
-          They can also choose to approve or cancel the test, and there is a
-          "view patient" button that allows them to view the patient's whole
-          medical history.
-        </li>
-        <li>
-          <b>Approved Labs: </b>In approved labs doctor can see all lab test
-          which doctor approve.
-        </li>
-        <li>
-          <b>My Pending Requisitions:</b> A doctor who purchases an online lab
-          test from website without receiving approval from another doctor can
-          view the request for it in my pending requisition.
-        </li>
-        <li>
-          <b>My Requisitions: </b>In my requisition doctor can see all lab test
-          requisitions.
-        </li>
-      </ul>
-    </ol>
+    <header>
+      <div>
+        <img
+          src="https://demo.umbrellamd-video.com/assets/images/dashboards_logo.png?n=2"
+          height="80"
+          width="150"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <a class="links" href="">Home</a>
+        <a class="links" href="">About</a>
+        <a class="links" href="">Services</a>
+        <a class="links" href="">Evisit</a>
+        <a class="links" href="">Contact</a>
+      </div>
+
+      <div>
+        <button>Symtoms Checker</button>
+        <button>Join Us</button>
+      </div>
+    </header>
+
+    <div>
+      <h1>REGISTER AS A DOCTOR</h1>
+      <h3>Personal Information</h3>
+
+      <form action="" class="form">
+        <label for="fname">First Name:*</label>
+        <input type="text" id="fname" required placeholder="First Name" />
+        <label for="lname">Last Name:*</label>
+        <input
+          type="text"
+          id="lname"
+          required
+          placeholder="Last Name"
+        /><br /><br />
+        <label for="gender">Gender:*</label>
+
+        <select name="gender" id="gender">
+          <option value="gander">Select a Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others</option>
+        </select>
+        <label for="dateofbirth">Date Of Birth:*</label>
+        <input
+          type="date"
+          id="dateofbirth"
+          required
+          placeholder="Day-month-year"
+        /><br /><br />
+
+        <label for="phonenumber">Phone Number:*</label>
+        <input
+          type="number"
+          id="phonenumber"
+          required
+          placeholder="Phone Number"
+        />
+        <label for="zipcode">Zip code:*</label>
+        <input
+          type="number"
+          id="zipcode"
+          required
+          placeholder="Zip code"
+        /><br /><br />
+        <label for="state">State:*</label>
+
+        <select name="state" id="state">
+          <option value="state">Select a State</option>
+          <option value="missouri">Missouri</option>
+          <option value="alabama">Alabama</option>
+          <option value="miami">Miami</option>
+        </select>
+        <label for="city">City</label>
+        <input
+          type="text"
+          id="city"
+          required
+          placeholder="Select a City"
+        /><br /><br />
+
+        <label for="address">Address:*</label>
+        <input type="text" id="address" required placeholder=" Address" />
+        <div>
+          <h2>Professional Information</h2>
+          <label for="npi">NPI:*</label>
+          <input type="number" id="npi" required placeholder="NPI" />
+          <label for="upin">UNPI:*</label>
+          <input
+            type="number"
+            id="upin"
+            required
+            placeholder="UNPI"
+          /><br /><br />
+
+          <label for="specialization">Specialization:*</label>
+
+          <select name="specialization" id="specialization">
+            <option value="specialization">Select a Specialization</option>
+            <option value="primary care">Primary Care</option>
+            <option value="cardiologists">Cardiologists</option>
+            <option value="pain management">Pain Management</option>
+            <option value="substance abuse">Substance Abuse"</option>
+          </select>
+
+          <label for="licensedstates">Licensed States:*</label>
+          <select name="licensedstates" id="licensedstates">
+            <option value="missouri">Missouri</option>
+            <option value="alabama">Alabama</option>
+            <option value="alaska">Alaska</option>
+            <option value="newyork">New York</option>
+          </select>
+        </div>
+        <div>
+          <h1>Account Information</h1>
+          <label for="email">Email:*</label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="email@example.com"
+          />
+          <label for="username">UserName:*</label>
+          <input
+            type="text"
+            id="username"
+            required
+            placeholder="UserName"
+          /><br /><br />
+          <label for="password">Password:*</label>
+          <input
+            type="password"
+            id="password"
+            required
+            placeholder="Password"
+          />
+          <label for="confirmpassword">Confirm Password:*</label>
+          <input
+            type="password"
+            id="password"
+            required
+            placeholder="Confirm Password"
+          /><br /><br />
+        </div>
+        <div>
+          <input type="checkbox" id="checkbox" required />
+          <label for="checkbox">I agree with all terms ans conditions</label
+          ><br /><br />
+          
+          <button class="submit">Submit</button><br /><br />
+
+          <p>Are you already register? <a href="">Login</a></p>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
